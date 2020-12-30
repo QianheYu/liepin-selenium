@@ -87,13 +87,19 @@ savedata.py文件将通过消息队列获取从spider传递过来的数据并存
 
 本程序使用csv格式文件存储数据。数据按照职位进行存储，每一个职位一行，数据名称与字段名对应关系如下表所示
 
-
-
-| 中文名称   | 职位 | 薪资   | 工作地点 | time | catagory | 招聘人数 | 创建时间   |  企业名称   | 企业性质   | 企业规模 | 所处行业 |
-| ---------- | ---- | ------ | -------- | ---- | -------- | -------- | ---------- | :---------: | ---------- | -------- | -------- |
-| 字段英文名 | job  | salary | where    | time | catagory | num      | createtime | companyname | properties | scale    | industry |
-
-
+| 中文名称 | 字段名      | 数据类型 | 是否主外键 |
+| -------- | ----------- | -------- | ---------- |
+| 职位     | job         | string   |            |
+| 薪资     | salary      | string   |            |
+| 工作地点 | where       | string   |            |
+| 时间     | time        | string   |            |
+| 岗位     | catagory    | string   |            |
+| 招聘人数 | num         | string   |            |
+| 创建时间 | createtime  | string   |            |
+| 企业名称 | companyname | string   |            |
+| 企业性质 | properties  | string   |            |
+| 企业规模 | scale       | string   |            |
+| 所处行业 | industry    | string   |            |
 
 ### 3、具体问题解决方案
 

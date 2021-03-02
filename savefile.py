@@ -23,7 +23,7 @@ def start(queue, single, processpid):
             # print(data)
         else:
             single['savedatastate'] = True
-            showdata.draw()
+            # showdata.draw()
             print('stop savedata')
 
 if __name__ == '__main__':

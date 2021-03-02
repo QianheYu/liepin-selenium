@@ -4,7 +4,7 @@ import requestPage
 import random, time
 import acquire
 import os
-import thread
+
 
 x_lock = threading.Lock()
 y_lock = threading.Lock()

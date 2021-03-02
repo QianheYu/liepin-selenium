@@ -3,6 +3,7 @@ import os
 import spider
 import savefile
 import time
+import showdata
 
 if __name__ == '__main__':
     print("Program Started...")
@@ -24,8 +25,11 @@ if __name__ == '__main__':
         if key == 'q':
 
             single['spider'] = False
-            time.sleep(20)
+            # time.sleep(20)
             # os.kill(pidlist[spider])
-            time.sleep(20)
+            # time.sleep(20)
+            while single['savedatastate'] == False:
+                pass
+            showdata.draw()
             print('quit')
 
